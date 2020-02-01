@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_grad"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/platygaianbutton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="btnGoBack_Click"
+        android:text="Go Back"
+        android:textColor="@color/white"
+        fbutton:layout_constraintBottom_toBottomOf="parent"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="1.0"
+        fbutton:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPoints2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/coin"
+        android:drawablePadding="10dp"
+        android:text="13"
+        android:textSize="24sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="0.541"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="You get"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="0.537"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/timeUpText" />
+
+    <TextView
+        android:id="@+id/timeUpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/timeup"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/timer"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toTopOf="parent" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/playAgainButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Take test again"
+        android:textColor="#f1f1f1"
+        fbutton:buttonColor="@color/lightGreen"
+        fbutton:layout_constraintBottom_toTopOf="@+id/platygaianbutton3"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="0.495"
+        fbutton:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

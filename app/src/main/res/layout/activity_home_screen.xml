@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/royalBlue"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Questionare"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        fbutton:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/playGame"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Take Questionare"
+        android:textColor="@color/white"
+        fbutton:buttonColor="@color/lightGreen"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/quit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Come Back Later"
+        android:textColor="@color/white"
+        fbutton:buttonColor="@color/lightGreen"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/playGame" />
+
+    <TextView
+        android:id="@+id/txtMins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/clock"
+        android:drawablePadding="10dp"
+        android:text="34"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minutes"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/txtMins" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Quantum Physics Test"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/tQ" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/coins"
+        android:drawablePadding="10dp"
+        android:text="122 - 124"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Reward Points"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="14"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questions"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/textView59" />
+</androidx.constraintlayout.widget.ConstraintLayout>
